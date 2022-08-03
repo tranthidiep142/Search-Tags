@@ -1,0 +1,88 @@
+:root{
+    --primary-key: #8cc84c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-key);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.content{
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+li{
+    background-color: var(--primary-key);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px;
+    margin: 0 5px 10px 0;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+li i{
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input{
+    font-size: 24px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.remove-all{
+    background-color: var(--primary-key);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+li:hover,
+.remove-all:hover{
+    opacity: 0.8;
+    
+}
+
